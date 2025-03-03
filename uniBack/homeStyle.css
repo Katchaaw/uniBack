@@ -1,0 +1,149 @@
+:root {
+    --background: #B8CBD0;
+    --text-color: #000000;
+}
+
+body{
+    background: var(--background);
+    display: block;
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    min-height: 100%;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#searchbar {
+    display: inline-block;
+    left: 34px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+  
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="submit"]{
+    flex: 0 0 auto;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+/*Searchbar cliquée*/
+input[type="text"]:focus {
+    border-color: #4285f4;
+    box-shadow: 0px 0px 5px #4285f4;
+}
+
+/*Loupe cliquée*/
+input[type="text"]:focus::placeholder {
+    opacity: 0;
+}
+
+.home{
+    margin-left: 10px;
+}
+
+img{
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Liste des onglets*/
+ul{
+    list-style-type:none;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    width: 15%;
+    height: 100%;
+    min-width: 200px;
+}
+
+/*Image des onglets*/
+li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+/*Box image+liens*/
+li div{
+    display: flex;
+    margin-top: 25px;
+    align-items: center; ;
+}
+
+/*Onglets*/
+li a{
+    text-decoration: none;
+    color: black;
+    background-color: #EBEBEB;
+    border-radius: 4px;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    height: 20%;
+    position: relative;    
+    min-width: 40%;
+}
+
+/*Onglets pointés*/
+li a:hover{
+    background-color: #7A90A4;
+}
+
+.box-post{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    bottom: 0;
+    width: 290px;
+    margin-top: 250px;
+}
+
+
+#posts{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    left: 300px;
+    top: 75px;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 1000px;
+    min-width: 300px;
+}

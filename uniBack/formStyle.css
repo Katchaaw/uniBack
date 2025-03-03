@@ -1,0 +1,113 @@
+:root {
+    --main-bg-color: #eaedf0;
+    --main-font-family: Futura, Helvetica, Arial, sans-serif;
+    --main-font-color: #303030;
+    --main-font-size: 16px;
+    --main-border-radius: 8px;
+    --main-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    --main-button-bg-color: #344D59;
+    --main-button-font-color: #fff;
+    --main-button-border-width: 2px;
+    --main-button-border-color: #344D59;
+    --main-input-border-width: 1px;
+    --main-input-border-color: #ccc;
+    --main-input-border-radius: 5rem;
+}
+    
+body {
+    background: var(--main-bg-color);
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    height: 100%;
+}
+    
+.logo {
+    margin-top: 30px;
+    text-align: center;
+}
+    
+.inscription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 350px;
+    height: auto;
+    border: 1px solid;
+    border-radius: var(--main-border-radius);
+    padding: 0 50px;
+    background: white;
+    position: relative;
+    box-shadow: var(--main-box-shadow);
+}
+    
+h1 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+    
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 30px;
+}
+    
+form div > label {
+    margin-bottom: 2px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+    
+form div > input,
+form div > select,
+form div > textarea {
+    background: white;
+    border: none;
+    border-radius: var(--main-input-border-radius);
+    font-size: var(--main-font-size);
+    font-weight: 500;
+    font-family: Montserrat, "sans-serif";
+    box-shadow: var(--main-box-shadow);
+}
+    
+form div p {
+    font-size: 10px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+    
+form div > input {
+    border-style: solid;
+    border-color: var(--main-input-border-color);
+    border-radius: var(--main-input-border-radius);
+    border-width: var(--main-input-border-width);
+    margin-top: 5px;
+    padding: 5px 13px;
+    height: 20px;
+}
+    
+form div:last-child {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+form button {
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 5px 18px;
+    width: 100%;
+    min-height: 32px;
+    background-color: var(--main-button-bg-color);
+    color: var(--main-button-font-color);
+    border-radius: var(--main-border-radius);
+    border-width: var(--main-button-border-width);
+    border-color: var(--main-button-bg-color);
+    border-style: solid;
+}
