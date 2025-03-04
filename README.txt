@@ -4,10 +4,6 @@
 ##  ## ## ### ## ##  ## ##  ## ##     ## ## 
 ###### ##  ## ## #####  ##  ## ###### ##  ##
 
-IO2
-Projet de fin de semestre
-Groupe 160 : Lionel ALVES VIEIRA, Ilias FADILI, Erwan FROMENT
-
 
 
 ######################################
